@@ -40,4 +40,4 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 
 
 ## Author:
-Ons Ben Jannet
+* Ons Ben Jannet : https://github.com/OnsJannet
