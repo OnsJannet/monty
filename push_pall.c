@@ -18,7 +18,7 @@ void push(stack_t **stack, unsigned int line_number)
 	{
 		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
-	}	
+	}
 
 	number = strtok(NULL, DELIMS);
 	if (number == NULL)
@@ -38,12 +38,12 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pall - prints all the values on the stack starting from the top
+ * pall - prints all the values on the stack starting from the top
  * @stack: stack
  * @line_number: line number
  */
 
-void _pall(stack_t **stack, unsigned int line_number)
+void pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current = *stack;
 
