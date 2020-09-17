@@ -1,6 +1,16 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
 
+
+/* ----- C Libraries ------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* ----- Delims ------*/
+
+#define DELIMS "\n \r\t"
+
 /* ----- Data Structures ----- */
 
 /**
@@ -31,5 +41,19 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+/* ----- files----- */
+void push(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
+void pop (stack_t **stack, unsigned int line_number);
+void nop(stack_t **head, unsigned int line_number);
+
+
+extern stack_t **global_head;
+
+void global_free(void);
+
+void read_file(char *file, stack_t **stack);
+
 
 #endif
