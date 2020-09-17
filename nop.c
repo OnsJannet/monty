@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
  * nop - a function that doesn’t do anything
- * @head: pointer to a pointer to a struct of type stack_t
- * @line_number: line number of instruction
+ * @head: d pointer to a struct of type stack_t
+ * @line_number: line number 
  *
  * Return: void
  */
